@@ -1,0 +1,87 @@
+.sidebar-height {
+    height: calc(100vh - 72px);
+}
+
+.sidebar-container {
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.sidebar-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.sidebar-container::-webkit-scrollbar:vertical {
+    width: 4px;
+}
+
+.sidebar-container::-webkit-scrollbar-button:increment,
+.sidebar-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.sidebar-container::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+    background-color: #34AEE5;
+    border-radius: 20px;
+    border: 1px solid #34AEE5;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/* CONTENT-SIDEBAR */
+
+.content-sidebar-scroll {
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+}
+
+.content-sidebar-container {
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+
+    direction: rtl
+}
+
+.content-sidebar-container-children {
+    direction: ltr
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.content-sidebar-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.content-sidebar-container::-webkit-scrollbar:vertical {
+    width: 4px;
+}
+
+.content-sidebar-container::-webkit-scrollbar-button:increment,
+.content-sidebar-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.content-sidebar-container::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.content-sidebar-container::-webkit-scrollbar-thumb {
+    background-color: #34AEE5;
+    border-radius: 20px;
+    border: 1px solid #34AEE5;
+}
+
+.content-sidebar-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}

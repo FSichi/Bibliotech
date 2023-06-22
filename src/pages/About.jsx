@@ -1,12 +1,12 @@
 import { PageContainer } from "./PageContainer"
 
-export const Pagina1 = () => {
+export const About = () => {
     return (
-        <PageContainer pageContent={<Pagina1Content />} sidebarContent={<Pagina1Sidebar />} titlePage={'Pagina 1'}/>
+        <PageContainer pageContent={<AboutContent />} sidebarContent={<AboutSidebar />} titlePage={'Acerca De'}/>
     )
 }
 
-const Pagina1Content = () => {
+const AboutContent = () => {
     return (
         <section>
             <div className="mt-4 mr-10">
@@ -39,7 +39,7 @@ const Pagina1Content = () => {
         </section>
     )
 }
-const Pagina1Sidebar = () => {
+const AboutSidebar = () => {
     return (
         <div className="text-white p-2 fixed content-sidebar-scroll content-sidebar-container">
 
