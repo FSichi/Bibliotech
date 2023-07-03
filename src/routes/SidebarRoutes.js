@@ -90,18 +90,13 @@ export const sidebarRoutes = [
                 activeOption: false,
             },
             {
-                path: '/backend/modelo-mongodb',
-                name: 'Definicion de modelos en MongoDB',
-                activeOption: false,
-            },
-            {
-                path: '/backend/modelo-sequelize',
-                name: 'Definicion de modelos en Sequelize',
+                path: '/backend/modelos',
+                name: 'Definicion de modelos MongoDB - Sequelize',
                 activeOption: false,
             },
             {
                 path: '/backend/crud',
-                name: 'CRUD en Mongo y Sequelize',
+                name: 'Operaciones CRUD en Mongo y Sequelize',
                 activeOption: false,
             },
             {
@@ -112,6 +107,16 @@ export const sidebarRoutes = [
             {
                 path: '/backend/roles-token',
                 name: 'Definicion de Roles y Token',
+                activeOption: false,
+            },
+            {
+                path: '/backend/queryparams',
+                name: 'Generalizar APIs con QueryParams',
+                activeOption: false,
+            },
+            {
+                path: '/backend/consultas-avanzadas',
+                name: 'Consultas Avanzadas MongoDB',
                 activeOption: false,
             }
         ]
@@ -124,6 +129,11 @@ export const sidebarRoutes = [
             {
                 path: '/general/herramientas', // the url
                 name: 'Herramientas de Desarrollo', // name that appear in Sidebar
+                activeOption: false,
+            },
+            {
+                path: '/general/postman', // the url
+                name: 'Postman', // name that appear in Sidebar
                 activeOption: false,
             },
             {

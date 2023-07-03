@@ -19,7 +19,7 @@ export const App = () => {
                         <Sidebar />
                     </div>
 
-                    <section className="w-full ml-5 md:ml-5 lg:ml-96 mb-10 mt-5"> {/* w-3/4 lg:ml-96 mb-10 */}
+                    <section className="w-full ml-5 md:ml-5 lg:ml-96"> {/* w-3/4 lg:ml-96 mb-10 */}
                         <Routes>
 
                             {AppRoutesList.map((route, i) => (

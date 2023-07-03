@@ -11,8 +11,7 @@ import { Tailwind } from "../pages/Frontend/Tailwind";
 import { Welcome } from "../pages/Welcome";
 import { EstructuraBackend } from "../pages/Backend/Estructura";
 import { ImplementacionAPI } from "../pages/Backend/ImplementacionAPI";
-import { ModelosMongoDB } from "../pages/Backend/ModelosMongoDB";
-import { ModelosSequelize } from "../pages/Backend/ModelosSequelize";
+import { Modelos } from "../pages/Backend/Modelos";
 import { Crud } from "../pages/Backend/Crud";
 import { Middlewares } from "../pages/Backend/Middlewares";
 import { RolesyTokens } from "../pages/Backend/RolesyTokens";
@@ -22,6 +21,9 @@ import { Railway } from "../pages/General/Railway";
 import { Git } from "../pages/General/Git";
 import { BitbucketGithub } from "../pages/General/BitbucketGithub";
 import { About } from "../pages/About";
+import { QueryParams } from "../pages/Backend/QueryParams";
+import { ConsultasMongo } from "../pages/Backend/ConsultasMongo";
+import { Postman } from "../pages/General/Postman";
 
 export const AppRoutesList = [
     {
@@ -100,14 +102,9 @@ export const AppRoutesList = [
         component: <ImplementacionAPI />,
     },
     {
-        path: '/backend/modelo-mongodb',
+        path: '/backend/modelos',
         exact: true,
-        component: <ModelosMongoDB />,
-    },
-    {
-        path: '/backend/modelo-sequelize',
-        exact: true,
-        component: <ModelosSequelize />,
+        component: <Modelos />,
     },
     {
         path: '/backend/crud',
@@ -125,9 +122,24 @@ export const AppRoutesList = [
         component: <RolesyTokens />,
     },
     {
+        path: '/backend/queryparams',
+        exact: true,
+        component: <QueryParams />,
+    },
+    {
+        path: '/backend/consultas-avanzadas',
+        exact: true,
+        component: <ConsultasMongo />,
+    },
+    {
         path: '/general/herramientas',
         exact: true,
         component: <Herramientas />,
+    },
+    {
+        path: '/general/postman',
+        exact: true,
+        component: <Postman />,
     },
     {
         path: '/general/netlify',

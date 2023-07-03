@@ -6,11 +6,11 @@ export const PageContainer = ({ pageContent, sidebarContent, titlePage }) => {
             <BrowserTitle titlePage={titlePage}/>
 
             <section className='flex'>
-                <div className="xl:w-3/4">
+                <div className="xl:w-3/4 mt-5 mb-5 p-3 sm:p-5">
                     {pageContent}
                 </div>
 
-                <div className="w-80 xl:w-96 border-l-2 border-gray-800 hidden xl:block">
+                <div className="xl:w-96 border-l-2 border-gray-800 hidden xl:block p-3">
                     {sidebarContent}
                 </div>
             </section>
