@@ -3,7 +3,6 @@ import { Navbar } from "./components/Navbar/Navbar"
 import { AppRoutesList } from "./routes/AppRoutesList"
 import { Error404 } from "./pages/Error404"
 import { Sidebar } from "./components/Sidebar/Sidebar"
-// import { ContentSidebar } from "./components/Sidebar/ContentSidebar"
 
 export const App = () => {
     return (
@@ -19,7 +18,7 @@ export const App = () => {
                         <Sidebar />
                     </div>
 
-                    <section className="w-full ml-5 md:ml-5 lg:ml-96"> {/* w-3/4 lg:ml-96 mb-10 */}
+                    <section className="w-full ml-5 md:ml-5 lg:ml-96"> 
                         <Routes>
 
                             {AppRoutesList.map((route, i) => (
@@ -34,10 +33,6 @@ export const App = () => {
 
                         </Routes>
                     </section>
-
-                    {/* <div className="w-96 border-l-2 border-gray-800">
-                        <ContentSidebar />
-                    </div> */}
 
                 </div>
 

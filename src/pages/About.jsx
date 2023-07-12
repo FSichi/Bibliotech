@@ -2,6 +2,7 @@ import { PageContainer } from "./PageContainer"
 import { TitlePage } from '../components/PageComponents/TitlePage'
 import { Separator } from '../components/PageComponents/Separator'
 // import profileImage from '../assets/img/profile.jpeg';
+
 export const About = () => {
     return (
         <PageContainer titlePage={'Acerca De'} pageContent={<AboutContent />} sidebarContent={<AboutSidebar />} />
@@ -10,7 +11,7 @@ export const About = () => {
 
 const AboutContent = () => {
     return (
-        <article>
+        <article className="text-justify">
 
             <TitlePage sectionTitle={'Introduccion'} pageTitle={'Acerca De'} />
 
@@ -60,37 +61,9 @@ const AboutSidebar = () => {
 
                 <h1 className="text-sky-400 text-center">Contenido de la Pagina</h1>
 
-                <h1 className="mt-8 ml-4 text-sky-300">Librerias de Utilidad General</h1>
-
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 1</h2>
-                <h2 className="ml-10 mt-2 text-sky-300">Libreria 2</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 3</h2>
-
-                <h1 className="mt-5 ml-4 text-slate-400"> Librerias de Utilidad Especifica</h1>
-
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 1</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 2</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 3</h2>
-
-                <h1 className="mt-5 ml-4 text-slate-400"> Librerias de Utilidad Especifica</h1>
-
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 1</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 2</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 3</h2>
-
-
-                <h1 className="mt-5 ml-4 text-slate-400"> Librerias de Utilidad Especifica</h1>
-
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 1</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 2</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 4</h2>
-
-                <h1 className="mt-5 ml-4 text-slate-400"> Librerias de Utilidad Especifica</h1>
-
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 1</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 2</h2>
-                <h2 className="ml-10 mt-2 text-slate-400">Libreria 4</h2>
-
+                <h1 className="mt-8 ml-4 text-slate-400">Finalidad y Objetivo General</h1>
+                <h1 className="mt-5 ml-4 text-slate-400"> Sobre Mi</h1>
+        
             </div>
 
         </div>

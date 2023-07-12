@@ -1,0 +1,31 @@
+.codeImg {
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 1400px) {
+    .codeImg {
+        width: 870px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .codeImg {
+        width: 700px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .codeImg {
+        width: 275px;
+    }
+
+    /* .sm\:w-96 {
+        width: 24rem
+         384px 
+        ;
+    } */
+}

@@ -1,32 +1,29 @@
 import { Popover } from '@headlessui/react'
-import { MenuIcon } from '@heroicons/react/outline'
+import { AdjustmentsIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/outline'
 
 export const HamburguerButton = () => {
     return (
-        <div className="-mr-2 -my-2 md:hidden flex">
-            <Popover.Button className="bg-gray-900 dark:bg-white text-gray-100 dark:text-gray-900 rounded-md p-2 inline-flex items-center justify-center "> {/* hover:bg-sky-300 dark:hover:bg-sky-300 */}
+        <div className="-mr-2 -my-2 md:hidden">
+            <Popover.Button className="bg-slate-700 text-gray-100 dark:text-gray-900 rounded-md p-2 "> {/* hover:bg-sky-300 dark:hover:bg-sky-300 */}
                 <span className="sr-only">Open menu</span>
-                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                <AdjustmentsIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
         </div>
     )
 }
 
-
 export const NavbarProfileButton = ({ classNames, open, icon }) => {
     return (
-        <Popover.Button
-            className={classNames(
-                open ? ' dark:text-teal-300' : 'text-gray-900 dark:text-white',
-                'group rounded-md inline-flex items-center text-base font-medium focus:outline-none mt-2'
-            )}
-        >
-
-            <span className="nav-link bg-gray-800 p-2 text-lg rounded-lg text-white">
+        <Popover.Button className='group rounded-md inline-flex items-center text-base font-medium focus:outline-none mt-1'>
+            <span
+                className={classNames(
+                    open ? ' bg-sky-400' : 'bg-gray-700',
+                    'nav-link p-2 text-lg rounded-md text-white hover:bg-sky-400'
+                )}
+            >
                 {icon}
             </span>
-
         </Popover.Button>
     )
 }

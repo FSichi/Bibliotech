@@ -8,10 +8,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 html,
 body {
   font-family: 'Lexend', 'Josefin Sans', 'Roboto Mono', sans-serif;
   min-height: 100vh;
+
+  transition: scroll-behavior 0.3s ease-in-out;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

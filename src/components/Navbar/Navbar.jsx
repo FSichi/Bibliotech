@@ -6,6 +6,7 @@ import { HamburguerButton, NavbarCloseHamburguerSection } from './NavbarComponen
 import { GroupOptionsLanguageContainer, GroupOptionsMovileContainer, GroupOptionsThemeContainer } from './NavbarComponents/GroupOptions'
 
 import './Navbar.css';
+import { SidebarMovile } from './NavbarComponents/SidebarMovile'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -28,11 +29,18 @@ const NavbarDesktop = () => {
 
                 <NavbarLogo />
 
-                <HamburguerButton />
+                <div className="hidden md:flex items-center justify-end md:flex-1 ">
+                    <GroupOptionsThemeContainer classNames={classNames} icon={<HiColorSwatch className="sm:h-6 sm:w-6 lg:h-5 w-5"/>} />
+                    <GroupOptionsLanguageContainer classNames={classNames} icon={<HiOutlineTranslate className="sm:h-6 sm:w-6 lg:h-5 w-5"/>} />
+                </div>
 
-                <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <GroupOptionsThemeContainer classNames={classNames} icon={<HiColorSwatch />} />
-                    <GroupOptionsLanguageContainer classNames={classNames} icon={<HiOutlineTranslate />} />
+                <div className='flex'>
+
+                    <div className='mr-5 md:-mr-5 lg:mr-0 mt-2'>
+                        <HamburguerButton />
+                    </div>
+
+                    <SidebarMovile />
                 </div>
 
             </div>
@@ -49,7 +57,7 @@ const NavbarMovile = () => {
             leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95"
         >
             <Popover.Panel focus className="absolute top-16 inset-x-0 p-2 transition transform origin-top-right md:hidden z-20">
-                 {/* eslint-disable-next-line no-unused-vars */}
+                {/* eslint-disable-next-line no-unused-vars */}
                 {({ close }) => (
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-gray-800 divide-y-2 divide-gray-700">
 
@@ -61,6 +69,7 @@ const NavbarMovile = () => {
                     </div>
                 )}
             </Popover.Panel>
+
         </Transition>
     )
 }

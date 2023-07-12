@@ -11,7 +11,7 @@ import dark from '../img/darkMode.png';
 
 export const GroupOptionsThemeContainer = ({ classNames, icon }) => {
     return (
-        <Popover className="relative ml-5">
+        <Popover className="relative mr-5">
             {({ open }) => (
                 <>
                     <NavbarProfileButton open={open} classNames={classNames} icon={icon} />
@@ -38,7 +38,7 @@ export const GroupOptionsThemeContainer = ({ classNames, icon }) => {
 
 export const GroupOptionsLanguageContainer = ({ classNames, icon }) => {
     return (
-        <Popover className="relative ml-5">
+        <Popover className="relative lg:-mr-10">
             {({ open }) => (
                 <>
                     <NavbarProfileButton open={open} classNames={classNames} icon={icon} />

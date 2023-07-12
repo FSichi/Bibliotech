@@ -52,21 +52,21 @@ export const sidebarRoutes = [
                 name: 'Consejos de Optimizacion',
                 activeOption: false,
             },
-            {
-                path: '/frontend/tailwind',
-                name: 'Tailwind',
-                activeOption: false,
-            },
+            // {
+            //     path: '/frontend/tailwind',
+            //     name: 'Tailwind',
+            //     activeOption: false,
+            // },
             {
                 path: '/frontend/i18n',
                 name: 'Internacionalizacion (i18n)',
                 activeOption: false,
             },
-            {
-                path: '/frontend/componentes',
-                name: 'Componentes',
-                activeOption: false,
-            },
+            // {
+            //     path: '/frontend/componentes',
+            //     name: 'Componentes',
+            //     activeOption: false,
+            // },
         ]
     },
     {
@@ -74,11 +74,11 @@ export const sidebarRoutes = [
         customStyle: 'ml-5 mt-3',
         // activeSection: false,
         subMenu: [
-            {
-                path: '/backend/librerias', // the url
-                name: 'Librerias que siempre utilizo', // name that appear in Sidebar
-                activeOption: false,
-            },
+            // {
+            //     path: '/backend/librerias', // the url
+            //     name: 'Librerias que siempre utilizo', // name that appear in Sidebar
+            //     activeOption: false,
+            // },
             {
                 path: '/backend/estructura-proyecto',
                 name: 'Estructura de un proyecto Node Js',
@@ -114,11 +114,11 @@ export const sidebarRoutes = [
                 name: 'Generalizar APIs con QueryParams',
                 activeOption: false,
             },
-            {
-                path: '/backend/consultas-avanzadas',
-                name: 'Consultas Avanzadas MongoDB',
-                activeOption: false,
-            }
+            // {
+            //     path: '/backend/consultas-avanzadas',
+            //     name: 'Consultas Avanzadas MongoDB',
+            //     activeOption: false,
+            // }
         ]
     },
     {
@@ -136,26 +136,26 @@ export const sidebarRoutes = [
                 name: 'Postman', // name that appear in Sidebar
                 activeOption: false,
             },
-            {
-                path: '/general/netlify',
-                name: 'Subir Frontend en Netlify',
-                active: false,
-            },
-            {
-                path: '/general/railway',
-                name: 'Subir Backend en Railway',
-                active: false,
-            },
+            // {
+            //     path: '/general/netlify',
+            //     name: 'Subir Frontend en Netlify',
+            //     active: false,
+            // },
+            // {
+            //     path: '/general/railway',
+            //     name: 'Subir Backend en Railway',
+            //     active: false,
+            // },
             {
                 path: '/general/git',
                 name: 'Organizacion Git',
                 active: false,
             },
-            {
-                path: '/general/upload-code-sites',
-                name: 'Bitbucket o Github',
-                active: false,
-            },
+            // {
+            //     path: '/general/upload-code-sites',
+            //     name: 'Bitbucket o Github',
+            //     active: false,
+            // },
         ]
     },
 ]

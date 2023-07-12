@@ -13,7 +13,7 @@ export const Sidebar = () => {
     useEffect(() => {
         let routes = getRoutesForActiveLink({ routes: routesValue, location: location.pathname });
 
-        console.log('Rutas Actualizadas: ', routes);
+        // console.log('Rutas Actualizadas: ', routes);
 
         setRoutesValue(routes);
         // eslint-disable-next-line react-hooks/exhaustive-deps
