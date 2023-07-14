@@ -58,8 +58,8 @@ export const sidebarRoutes = [
             //     activeOption: false,
             // },
             {
-                path: '/frontend/i18n',
-                name: 'Internacionalizacion (i18n)',
+                path: '/frontend/internacionalizacion',
+                name: 'Internacionalizacion',
                 activeOption: false,
             },
             // {

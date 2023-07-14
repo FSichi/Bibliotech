@@ -217,7 +217,9 @@ export const useFormHook = ( initialState = {} ) => {
                     Aquí tienes un ejemplo que demuestra cómo utilizar useState para crear un contador simple:
                 </h2>
 
-                <ShowCodeJavaScript code={useStateExample} />
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useStateExample} />
+                </div>
 
                 <h2 className="text-slate-400 mt-4">
                     En este ejemplo, hemos declarado una variable de estado llamada {`'count'`} y la función {`'setCount'`} que nos permite actualizar su valor. El valor inicial de {`'count'`} se establece en 0 mediante useState(0). Dentro del componente, hemos definido dos funciones:
@@ -248,7 +250,9 @@ export const useFormHook = ( initialState = {} ) => {
                     Vamos a Reutilizar el ejemplo anterior del contador, un poco mas simplificado, pero agregandole el hook useEffect para comprender los cambios y observaciones.
                 </h2>
 
-                <ShowCodeJavaScript code={useEffectExample} />
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useEffectExample} />
+                </div>
 
                 <h2 className="text-slate-400 mt-4">
                     En este ejemplo, hemos definido un componente Counter que utiliza useState para mantener el estado del contador. Cada vez que se hace clic en el botón {`'Incrementar'`}, se actualiza el estado del contador usando setCount.
@@ -278,9 +282,9 @@ export const useFormHook = ( initialState = {} ) => {
                     Vamos a Crear un componente de formulario para poder integrar el hook useRef y ver su funcionamiento:
                 </h2>
 
-                {/* Codigo useRef */}
-
-                <ShowCodeJavaScript code={useRefExample} />
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useRefExample} />
+                </div>
 
                 <h2 className="text-slate-400 mt-4">
                     En este ejemplo, creamos una referencia utilizando useRef llamada inputRef y la inicializamos con el valor null. Luego, asignamos esta referencia al atributo ref del campo de entrada del formulario.
@@ -304,7 +308,9 @@ export const useFormHook = ( initialState = {} ) => {
                     Supongamos que tenemos un componente que muestra el resultado de una operación de suma entre dos números, pero solo queremos calcular el resultado cuando los números cambien, no en cada renderizado:
                 </h2>
 
-                <ShowCodeJavaScript code={useMemoExample} />
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useMemoExample} />
+                </div>
 
                 <h2 className="text-slate-400 mt-4">
                     En este ejemplo, utilizamos el hook useState para mantener dos variables de estado: num1 y num2, que representan los números que queremos sumar. Luego, utilizamos useMemo para calcular el resultado de la suma solo cuando num1 o num2 cambien.
@@ -361,7 +367,9 @@ export const useFormHook = ( initialState = {} ) => {
                     (useEffect, useState, useCallback). Con useCallback me aseguro de optimizar el rendimiento al maximo para solo renderizar la funcion cuando algun elemento cambie.
                 </h2>
 
-                <ShowCodeJavaScript code={useItemGetter} />
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useItemGetter} />
+                </div>
 
             </div>
 
@@ -376,17 +384,12 @@ export const useFormHook = ( initialState = {} ) => {
                 </h2>
 
                 <h1 className="text-xl text-orange-400 mt-4 italic">Código de useItemGetter</h1>
-                <ShowCodeJavaScript code={useFormHook} />
+
+                <div className="codeImg">
+                    <ShowCodeJavaScript code={useFormHook} />
+                </div>
 
             </div>
-
-           {/*  <div className="mt-8 mr-10" id="paginacion">
-                <h1 className="text-2xl text-white">useFilterHook</h1>
-                <h2 className="text-slate-400 mt-4">
-                    La carpeta node_modules es generada automáticamente por npm (Node Package Manager) o yarn para almacenar todas las dependencias y paquetes de terceros utilizados en el
-                    proyecto. Aquí se encuentran todas las bibliotecas y módulos externos que has instalado mediante npm o yarn.
-                </h2>
-            </div> */}
 
         </article>
     )

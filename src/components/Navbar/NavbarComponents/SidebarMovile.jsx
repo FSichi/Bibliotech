@@ -16,13 +16,13 @@ const paginasFrontend = [
     { name: 'Estructura de ReactRouterDom', path: '/frontend/estructura-rrd' },
     { name: 'Rutas Publicas y Privadas', path: '/frontend/rutas' },
     { name: 'Consejos de Optimizacion', path: '/frontend/optimizacion' },
-    { name: 'Tailwind', path: '/frontend/tailwind' },
-    { name: 'Internacionalizacion', path: '/frontend/i18n' },
-    { name: 'Componentes', path: '/frontend/componentes' },
+    // { name: 'Tailwind', path: '/frontend/tailwind' },
+    { name: 'Internacionalizacion', path: '/frontend/internacionalizacion' },
+    // { name: 'Componentes', path: '/frontend/componentes' },
 ]
 
 const paginasBackend = [
-    { name: 'Librerias que siempre utilizo', path: '/backend/librerias' },
+    // { name: 'Librerias que siempre utilizo', path: '/backend/librerias' },
     { name: 'Estructura Node Js', path: '/backend/estructura-proyecto' },
     { name: 'Implementacion API', path: '/backend/implementacion-api' },
     { name: 'Definicion Modelos', path: '/backend/modelos' },
@@ -30,16 +30,16 @@ const paginasBackend = [
     { name: 'Middlewares', path: '/backend/middlewares' },
     { name: 'Roles y Token', path: '/backend/roles-token' },
     { name: 'QueryParams', path: '/backend/queryparams' },
-    { name: 'Consultas Avanzadas Mongo', path: '/backend/consultas-avanzadas' },
+    // { name: 'Consultas Avanzadas Mongo', path: '/backend/consultas-avanzadas' },
 ]
 
 const paginasGeneral = [
     { name: 'Herramientas de Desarrollo', path: '/general/herramientas' },
     { name: 'Postman', path: '/general/postman' },
-    { name: 'Netlify', path: '/general/netlify' },
-    { name: 'Railway', path: '/general/railway' },
+    // { name: 'Netlify', path: '/general/netlify' },
+    // { name: 'Railway', path: '/general/railway' },
     { name: 'Organizacion GIT', path: '/general/git' },
-    { name: 'Bitbucket o Github', path: '/general/upload-code-sites' },
+    // { name: 'Bitbucket o Github', path: '/general/upload-code-sites' },
 ]
 
 export const SidebarMovile = () => {

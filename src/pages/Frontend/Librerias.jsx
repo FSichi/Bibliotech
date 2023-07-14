@@ -89,7 +89,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={viteCode} />
                 </div>
 
@@ -114,7 +114,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={rrdCode} />
                 </div>
 
@@ -140,7 +140,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={reactIconsCode} />
                 </div>
 
@@ -165,7 +165,9 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <ShowCode code={reactHelmetCode} />
+                <div className="codeImg">
+                    <ShowCode code={reactHelmetCode} />
+                </div>
 
                 <p className="text-sky-400 mt-3 hover:text-indigo-400">
                     <a href="https://github.com/nfl/react-helmet" target="_blank" rel="noreferrer">https://github.com/nfl/react-helmet</a>
@@ -186,7 +188,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={axiosCode} />
                 </div>
 
@@ -211,7 +213,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={reactchartCode} />
                 </div>
 
@@ -239,7 +241,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={reacthookFormCode} />
                 </div>
 
@@ -266,7 +268,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={reactReduxCode} />
                 </div>
 
@@ -292,7 +294,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={reactSelectCode} />
                 </div>
 
@@ -314,7 +316,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full text-sm sm:text-base">
+                <div className="codeImg">
                     <ShowCode code={reactSpinnerCode} />
                 </div>
 
@@ -339,7 +341,7 @@ const LibreriasContent = () => {
 
                 <h1 className="text-xl text-white mt-4 italic">Instalacion</h1>
 
-                <div className="w-full sm:w-full">
+                <div className="codeImg">
                     <ShowCode code={sweetAlert2Code} />
                 </div>
 

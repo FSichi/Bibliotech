@@ -72,7 +72,7 @@ export const AppRoutesList = [
         component: <Tailwind />,
     },
     {
-        path: '/frontend/i18n',
+        path: '/frontend/internacionalizacion',
         exact: true,
         component: <Internacionalizacion />,
     },
