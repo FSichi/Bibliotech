@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { BrowserTitle } from '../components/BrowserTitle/BrowserTitle';
-import { BasicSVG } from '../components/PageComponents/SVGWelcome/svgLibrary';
+import { BasicSVG } from '../components/PageComponents/SVGWelcome/SVGLibrary';
 
 export const Welcome = () => {
     return (
