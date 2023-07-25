@@ -10,7 +10,7 @@ export const PageContainer = ({ pageContent, sidebarContent, titlePage }) => {
                     {pageContent}
                 </div>
 
-                <div className="2xl:w-96 border-l-2 border-gray-800 hidden 2xl:block p-3">
+                <div className="2xl:w-96 border-l-2 border-gray-300 dark:border-gray-800 hidden 2xl:block p-3">
                     {sidebarContent}
                 </div>
             </section>

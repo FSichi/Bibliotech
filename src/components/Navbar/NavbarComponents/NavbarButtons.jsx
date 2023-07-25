@@ -18,7 +18,7 @@ export const NavbarProfileButton = ({ classNames, open, icon }) => {
         <Popover.Button className='group rounded-md inline-flex items-center text-base font-medium focus:outline-none mt-1'>
             <span
                 className={classNames(
-                    open ? ' bg-sky-400' : 'bg-gray-700',
+                    open ? ' bg-sky-400' : 'bg-gray-900 dark:bg-gray-700',
                     'nav-link p-2 text-lg rounded-md text-white hover:bg-sky-400'
                 )}
             >

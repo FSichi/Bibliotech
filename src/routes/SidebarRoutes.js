@@ -131,11 +131,11 @@ export const sidebarRoutes = [
                 name: 'Herramientas de Desarrollo', // name that appear in Sidebar
                 activeOption: false,
             },
-            {
-                path: '/general/postman', // the url
-                name: 'Postman', // name that appear in Sidebar
-                activeOption: false,
-            },
+            // {
+            //     path: '/general/postman', // the url
+            //     name: 'Postman', // name that appear in Sidebar
+            //     activeOption: false,
+            // },
             // {
             //     path: '/general/netlify',
             //     name: 'Subir Frontend en Netlify',

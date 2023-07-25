@@ -6,7 +6,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
 
 export const App = () => {
     return (
-        <section className="bg-slate-900 text-white min-h-screen">
+        <section className=" text-white min-h-screen">
 
             <BrowserRouter>
 

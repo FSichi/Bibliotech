@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../../context/theme/ThemeContext';
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { NavbarProfileButton } from './NavbarButtons';
@@ -8,8 +10,19 @@ import de from '../img/Deutschland.png';
 
 import light from '../img/lightMode.png';
 import dark from '../img/darkMode.png';
+import { ToastNotification } from '../../../helpers/Toast';
+
+const makeToastNotification = () => {
+    ToastNotification.fire({
+        icon: 'info',
+        title: 'Funcionalidad proxima a implementar'
+    })
+}
 
 export const GroupOptionsThemeContainer = ({ classNames, icon }) => {
+
+    const { setTheme } = useContext(ThemeContext);
+
     return (
         <Popover className="relative mr-5">
             {({ open }) => (
@@ -24,8 +37,18 @@ export const GroupOptionsThemeContainer = ({ classNames, icon }) => {
                         <Popover.Panel className="absolute z-10 -left-3 transform -translate-x-20 mt-7 w-40">
 
                             <div className="py-5 bg-slate-800 rounded-lg flex justify-center">
-                                <OptionButton img={light} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 mr-0 ml-0'} imgType={1} buttonFunction={() => { }} />
-                                <OptionButton img={dark} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 mr-0 ml-0'} imgType={1} buttonFunction={() => { }} />
+                                <OptionButton
+                                    img={light} imgType={1}
+                                    buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 mr-0 ml-0'}
+                                    // buttonFunction={() => setTheme('light')}
+                                    buttonFunction={makeToastNotification}
+                                />
+                                <OptionButton
+                                    img={dark} imgType={1}
+                                    buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 mr-0 ml-0'}
+                                    // buttonFunction={() => setTheme('dark')}
+                                    buttonFunction={makeToastNotification}
+                                />
                             </div>
 
                         </Popover.Panel>
@@ -51,9 +74,18 @@ export const GroupOptionsLanguageContainer = ({ classNames, icon }) => {
                         <Popover.Panel className="absolute z-10 -left-3 transform -translate-x-40 mt-7 w-56">
 
                             <div className="px-5 py-5 bg-slate-800 rounded-lg flex justify-between">
-                                <OptionButton img={es} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1} buttonFunction={() => { }} />
-                                <OptionButton img={en} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1} buttonFunction={() => { }} />
-                                <OptionButton img={de} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1} buttonFunction={() => { }} />
+                                <OptionButton
+                                    img={es} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1}
+                                    buttonFunction={makeToastNotification}
+                                />
+                                <OptionButton
+                                    img={en} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1}
+                                    buttonFunction={makeToastNotification}
+                                />
+                                <OptionButton
+                                    img={de} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={1}
+                                    buttonFunction={makeToastNotification}
+                                />
                             </div>
 
                         </Popover.Panel>
@@ -73,16 +105,31 @@ export const GroupOptionsMovileContainer = ({ title, type = 0 }) => {
                     ?
                     (
                         <div className='flex justify-center'>
-                            <OptionButton img={es} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2} buttonFunction={() => { }} />
-                            <OptionButton img={en} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 ml-8 mr-8'} imgType={2} buttonFunction={() => { }} />
-                            <OptionButton img={de} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2} buttonFunction={() => { }} />
+                            <OptionButton
+                                img={es} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2}
+                                buttonFunction={makeToastNotification}
+                            />
+                            <OptionButton
+                                img={en} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 ml-8 mr-8'} imgType={2}
+                                buttonFunction={makeToastNotification}
+                            />
+                            <OptionButton
+                                img={de} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2}
+                                buttonFunction={makeToastNotification}
+                            />
                         </div>
                     )
                     :
                     (
                         <div className='flex justify-center'>
-                            <OptionButton img={light} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2} buttonFunction={() => { }} />
-                            <OptionButton img={dark} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 ml-8'} imgType={2} buttonFunction={() => { }} />
+                            <OptionButton
+                                img={light} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500'} imgType={2}
+                                buttonFunction={makeToastNotification}
+                            />
+                            <OptionButton
+                                img={dark} buttonStyle={'-m-3 p-2 flex items-start rounded-lg hover:bg-sky-500 ml-8'} imgType={2}
+                                buttonFunction={makeToastNotification}
+                            />
                         </div>
                     )
             }

@@ -35,7 +35,7 @@ const paginasBackend = [
 
 const paginasGeneral = [
     { name: 'Herramientas de Desarrollo', path: '/general/herramientas' },
-    { name: 'Postman', path: '/general/postman' },
+    // { name: 'Postman', path: '/general/postman' },
     // { name: 'Netlify', path: '/general/netlify' },
     // { name: 'Railway', path: '/general/railway' },
     { name: 'Organizacion GIT', path: '/general/git' },

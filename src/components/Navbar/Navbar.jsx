@@ -8,13 +8,15 @@ import { GroupOptionsLanguageContainer, GroupOptionsMovileContainer, GroupOption
 import './Navbar.css';
 import { SidebarMovile } from './NavbarComponents/SidebarMovile'
 
+// import { Toggle } from '../../context/theme'
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export const Navbar = () => {
     return (
-        <Popover className="border-b-2 border-gray-800 sticky top-0 z-50 items-center justify-between bg-white py-2 shadow-slate-900/5 transition duration-500 shadow-none bg-slate-900/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-slate-900/75">
+        <Popover className="border-b-2 border-gray-300 dark:border-gray-800 sticky top-0 z-50 items-center justify-between py-2 shadow-slate-900/5 transition duration-500 shadow-none bg-slate-900/95 backdrop-blur [@supports(backdrop-filter:blur(0))]:bg-slate-100/75 dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75">
             <NavbarDesktop />
             <NavbarMovile />
         </Popover>
@@ -30,8 +32,9 @@ const NavbarDesktop = () => {
                 <NavbarLogo />
 
                 <div className="hidden md:flex items-center justify-end md:flex-1 ">
-                    <GroupOptionsThemeContainer classNames={classNames} icon={<HiColorSwatch className="sm:h-6 sm:w-6 lg:h-5 w-5"/>} />
-                    <GroupOptionsLanguageContainer classNames={classNames} icon={<HiOutlineTranslate className="sm:h-6 sm:w-6 lg:h-5 w-5"/>} />
+                    {/* <Toggle /> */}
+                    <GroupOptionsThemeContainer classNames={classNames} icon={<HiColorSwatch className="sm:h-6 sm:w-6 lg:h-5 w-5" />} />
+                    <GroupOptionsLanguageContainer classNames={classNames} icon={<HiOutlineTranslate className="sm:h-6 sm:w-6 lg:h-5 w-5" />} />
                 </div>
 
                 <div className='flex'>
