@@ -91,12 +91,14 @@ export const sidebarRoutes = [
             },
             {
                 path: '/backend/modelos',
-                name: 'Definicion de modelos MongoDB - Sequelize',
+                // name: 'Definicion de modelos MongoDB - Sequelize',
+                name: 'Definicion de modelos MongoDB',
                 activeOption: false,
             },
             {
                 path: '/backend/crud',
-                name: 'Operaciones CRUD en Mongo y Sequelize',
+                // name: 'Operaciones CRUD en Mongo y Sequelize',
+                name: 'Operaciones CRUD',
                 activeOption: false,
             },
             {
