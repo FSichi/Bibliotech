@@ -126,7 +126,7 @@ const LibreriasContent = () => {
 
                 <ThirdTitle text={'Instalacion'} />
                 <ShowCode code={rrdCode} />
-                <LinksToPages link={'https://reactrouter.com/en/main'} />
+                <LinksToPages link={'reactrouter.com/en/main'} />
 
             </div>
 
@@ -302,7 +302,7 @@ const LibreriasContent = () => {
 
                 <ThirdTitle text={'Instalacion'} />
                 <ShowCode code={reactSpinnerCode} />
-                <LinksToPages link={'https://github.com/venushadilshan/react-spinner-animated'} />
+                {/* <LinksToPages link={'github.com/venushadilshan/react-spinner-animated'} /> */}
 
             </div>
 

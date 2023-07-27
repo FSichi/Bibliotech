@@ -111,11 +111,11 @@ export const sidebarRoutes = [
                 name: 'Definicion de Roles y Token',
                 activeOption: false,
             },
-            {
-                path: '/backend/queryparams',
-                name: 'Generalizar APIs con QueryParams',
-                activeOption: false,
-            },
+            // {
+            //     path: '/backend/queryparams',
+            //     name: 'Generalizar APIs con QueryParams',
+            //     activeOption: false,
+            // },
             // {
             //     path: '/backend/consultas-avanzadas',
             //     name: 'Consultas Avanzadas MongoDB',

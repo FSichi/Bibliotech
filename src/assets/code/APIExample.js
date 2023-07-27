@@ -294,3 +294,195 @@ const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;
 `
+
+export const modelCRUD = `// models/User.js
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
+});
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
+`
+
+export const routesCRUD = `// routes/users.js
+const express = require('express');
+const router = express.Router();
+const UserController = require('../controllers/UserController');
+
+// Ruta para obtener todos los usuarios
+router.get('/users', UserController.getAllUsers);
+
+// Ruta para obtener un usuario por su ID
+router.get('/users/:id', UserController.getUserById);
+
+// Ruta para crear un nuevo usuario
+router.post('/users', UserController.createUser);
+
+// Ruta para actualizar un usuario por su ID
+router.put('/users/:id', UserController.updateUser);
+
+// Ruta para eliminar un usuario por su ID
+router.delete('/users/:id', UserController.deleteUser);
+
+module.exports = router;
+`
+
+export const controllerCRUD = `// controllers/UserController.js
+const userService = require('../service/UserService');
+
+// Obtener todos los usuarios
+const getAllUsers = async (req, res) => {
+  try {
+    const users = await userService.getAllUsers();
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Obtener un usuario por su ID
+const getUserById = async (req, res) => {
+  try {
+    const user = await userService.getOneUser();
+    if (!user) {
+      return res.status(404).json({ message: 'Usuario no encontrado' });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Crear un nuevo usuario
+const createUser = async (req, res) => {
+  try {
+    const userCreated = await alumnoService.createUser(req.body);
+    res.status(201).json({ message: 'Usuario creado exitosamente', data: userCreated });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Actualizar un usuario por su ID
+const updateUser = async (req, res) => {
+  try {
+
+    const userUpdated = await alumnoService.updateUser(req.body);
+
+    if (!userUpdated) {
+      return res.status(404).json({ message: 'Usuario no encontrado' });
+    }
+
+    res.json({ message: 'Usuario actualizado exitosamente', data: userUpdated });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// Eliminar un usuario por su ID
+const deleteUser = async (req, res) => {
+  try {
+
+    const userDeleted = await alumnoService.deleteUser(req.params.id);
+
+    if (!userDeleted) {
+      return res.status(404).json({ message: 'Usuario no encontrado' });
+    }
+
+    res.json({ message: 'Usuario eliminado exitosamente', data: userDeleted });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+module.exports = {
+  getAllUsers,
+  getUserById,
+  createUser,
+  updateUser,
+  deleteUser,
+};
+`
+
+export const serviceCRUD = `// service/UserService.js
+const User = require('../models/User');
+
+// Obtener todos los usuarios
+const getAllUsers = async () => {
+  try {
+    const users = await User.find();
+    return users
+  } catch (error) {
+    throw { status: error.status || 500, message: error };
+  }
+};
+
+// Obtener un usuario por su ID
+const getUserById = async (userId) => {
+  try {
+    const user = await User.findById(userId);
+    return user;
+  } catch (error) {
+    throw { status: error.status || 500, message: error };
+  }
+};
+
+// Crear un nuevo usuario
+const createUser = async (userData) => {
+  try {
+    const user = new User(userData);
+    await user.save();
+
+    return user;
+  } catch (error) {
+    throw { status: error.status || 500, message: error };
+  }
+};
+
+// Actualizar un usuario por su ID
+const updateUser = async (userId, userData) => {
+  try {
+    const user = await User.findByIdAndUpdate(userId, userData, {
+      new: true,
+      runValidators: true,
+    });
+
+   return  user;
+  } catch (error) {
+    throw { status: error.status || 500, message: error };
+  }
+};
+
+// Eliminar un usuario por su ID
+const deleteUser = async (userId) => {
+  try {
+    const user = await User.findByIdAndRemove(userId);
+    return user;
+  } catch (error) {
+    throw { status: error.status || 500, message: error };
+  }
+};
+
+module.exports = {
+  getAllUsers,
+  getUserById,
+  createUser,
+  updateUser,
+  deleteUser,
+};
+`

@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+@media (max-width: 1600px) {
+    .codeImg {
+        width: 671px;
+    }
+}
+
 @media (max-width: 1400px) {
     .codeImg {
         width: 870px;

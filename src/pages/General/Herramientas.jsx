@@ -158,7 +158,7 @@ const Content = () => {
                     en todo el ciclo de desarrollo.
                 </ParagrafComponent>
 
-                <LinksToPagesOrange link={'https://www.atlassian.com/es/software/jira'} />
+                {/* <LinksToPagesOrange link={'atlassian.com/software/jira'} /> */}
 
             </div>
 

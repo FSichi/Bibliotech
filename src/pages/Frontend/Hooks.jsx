@@ -365,8 +365,8 @@ export const useFormHook = ( initialState = {} ) => {
                     En caso de querer conocer mas a profundidad acerca de los hooks en React. Te recomiendo chequear la documentacion correspondiente en este Link.
                 </ParagrafComponent>
 
-                <LinksToPages link={'https://legacy.reactjs.org/docs/hooks-intro.html'} />
-                <LinksToPages link={'https://react.dev/reference/react'} />
+                {/* <LinksToPages link={'https://legacy.reactjs.org/docs/hooks-intro.html'} /> */}
+                <LinksToPages link={'react.dev/reference/react'} />
             </div>
 
             <Separator />

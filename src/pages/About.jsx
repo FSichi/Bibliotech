@@ -14,7 +14,7 @@ export const About = () => {
 
 const AboutContent = () => {
     return (
-        <article className="text-justify">
+        <article className="md:text-justify">
 
             <TitlePage sectionTitle={'Introduccion'} pageTitle={'Acerca De'} />
 

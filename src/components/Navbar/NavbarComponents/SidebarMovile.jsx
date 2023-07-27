@@ -29,7 +29,7 @@ const paginasBackend = [
     { name: 'Operaciones CRUD', path: '/backend/crud' },
     { name: 'Middlewares', path: '/backend/middlewares' },
     { name: 'Roles y Token', path: '/backend/roles-token' },
-    { name: 'QueryParams', path: '/backend/queryparams' },
+    // { name: 'QueryParams', path: '/backend/queryparams' },
     // { name: 'Consultas Avanzadas Mongo', path: '/backend/consultas-avanzadas' },
 ]
 
